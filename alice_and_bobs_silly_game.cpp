@@ -35,7 +35,6 @@ void fillCounts(int maxN)
    counts[2] = 1;
    for(int i = 3; i <= maxN; i++) {
        counts[i] = counts[i-1] + (primes[i] ? 1 : 0);
-       //cout << "i = " << i << " count = " << count[i] << " isPrime = " << prime[i] << endl;
    }
 }
 
