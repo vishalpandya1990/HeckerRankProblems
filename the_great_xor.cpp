@@ -5,7 +5,7 @@ using namespace std;
 /*
  * Problem statement :- https://www.hackerrank.com/challenges/the-great-xor/problem
  * 
- * Uses :- Combinatorics, Bitwise logic and manipulations
+ * Uses :- Combinatorics, Bitwise logic
  * 
  */
 
