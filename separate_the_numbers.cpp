@@ -5,7 +5,7 @@ using namespace std;
 /*
  * Problems statement :- https://www.hackerrank.com/challenges/separate-the-numbers/problem
  * 
- * Uses basic string manipulation
+ * Uses basic string manipulations, and analysis
  *
  */ 
 
