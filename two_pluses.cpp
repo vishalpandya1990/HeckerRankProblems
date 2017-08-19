@@ -104,7 +104,7 @@ int getMaxProd(int x1, int y1, int x2, int y2){
             first.push_back({.x = x1-i, .y = y1});
             if(doOverlap(first, second)){
                  overlapWhenLastAddedIsFirst = true;
-                 if(lastAdded2) j--;
+                 if(lastAdded2) j--; // to nullify j++ in last iteration so that j points to most recent second-cell added.
                  break;
             }
             added1 = true;
@@ -127,6 +127,10 @@ int getMaxProd(int x1, int y1, int x2, int y2){
             j++;
        }
     }
+    /*
+     * When no overlap happens for first/second i.e. it extends maximum before other point overaps 
+     * with it, then out-of-bound occurs for that index.
+     */
     if(overlapWhenLastAddedIsFirst || i > d1)
         i--;
     if(overlapWhenLastAddedIsSecond || j > d2)
